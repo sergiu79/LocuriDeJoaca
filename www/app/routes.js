@@ -4,7 +4,8 @@ define([
   'controllers/app',
   'controllers/dashboard',
   'controllers/results',
-  'controllers/detail'
+  'controllers/detail',
+  'controllers/home'
 ], function (app) {
   'use strict';
   // definition of routes
@@ -21,6 +22,11 @@ define([
           url: '/dashboard',
           templateUrl: 'app/templates/dashboard.html',
           controller: 'DashboardCtrl'
+        })
+		 .state('home', {
+          url: '/home',
+          templateUrl: 'app/templates/home.html',
+          controller: 'HomeCtrl'
         })
         .state('results', {
           url: '/results/:search/:satTrans/:wheelChair/:wheelChairLift',

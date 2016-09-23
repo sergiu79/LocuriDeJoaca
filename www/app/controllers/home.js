@@ -4,7 +4,7 @@ define([
 ], function (app) {
   'use strict';
 
-  app.controller('DashboardCtrl', [
+  app.controller('HomeCtrl', [
     '$scope',
     '$state',
     'eventService',
