@@ -21,7 +21,7 @@ define([
 
           function addClick(marker, id) {
             $window.google.maps.event.addListener(marker, 'click', function () {
-              $state.go('detail', {
+              $state.go('home.detail', {
                 id: id
               });
             });

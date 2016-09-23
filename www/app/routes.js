@@ -47,7 +47,7 @@ define([
 						url: '/home',
 						abstract: true,
 						templateUrl: 'app/templates/home.html'
-						//,controller: 'HomeCtrl'
+								//,controller: 'HomeCtrl'
 					})
 
 					// Each tab has its own nav history stack:
@@ -78,6 +78,15 @@ define([
 							'home-dashboard': {
 								templateUrl: 'app/templates/results.html',
 								controller: 'ResultsCtrl'
+							}
+						}
+					})
+					.state('home.detail', {
+						url: '/detail/:id',
+						views: {
+							'home-dashboard': {
+								controller: 'DetailCtrl',
+								templateUrl: 'app/templates/detail.html'
 							}
 						}
 					})
