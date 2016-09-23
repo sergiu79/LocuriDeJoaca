@@ -1,5 +1,24 @@
 <ion-tabs class="tabs-stable" ng-class="{'tabs-positive': platform == 'android', 'tabs-icon-top': platform != 'android'}">
-  	<ion-tab title="Caută" ng-attr-icon="ion-home" href="#/dashboard" />
-	<ion-tab title="Hartă" ng-attr-icon="ion-map" href="#/harta" />
-	<ion-tab title="Propune" ng-attr-icon="ion-add" href="#/propune" />	
+	<!--<ion-tab class="nav-tab" title="Caută" ng-attr-icon="ion-home" href="#/dashboard">
+		 <ion-nav-view name="tab-dash"></ion-nav-view>
+	</ion-tab>
+	<ion-tab class="nav-tab" title="Hartă" ng-attr-icon="ion-map" href="#/harta"></ion-tab>
+	<ion-tab class="nav-tab" title="Propune" ng-attr-icon="ion-add" href="#/propune"></ion-tab>	
+	-->
+  <!-- Dashboard Tab -->
+  <ion-tab class="nav-tab" title="Dashboard" icon="icon ion-home" href="#/home/dashboard">
+    <ion-nav-view name="home-dashboard"></ion-nav-view>
+  </ion-tab>
+
+
+  <!-- Harta Tab -->
+  <ion-tab class="nav-tab" title="Harta" icon="icon ion-map" href="#/home/harta">
+    <ion-nav-view name="home-harta">HHH</ion-nav-view>
+  </ion-tab>
+
+
+  <!-- Propune Tab -->
+  <ion-tab class="nav-tab" title="Propune" icon="icon ion-android-add-circle" href="#/home/propune">
+    <ion-nav-view name="home-propune">PPP</ion-nav-view>
+  </ion-tab>
 </ion-tabs>

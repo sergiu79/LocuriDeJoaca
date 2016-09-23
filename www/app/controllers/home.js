@@ -9,7 +9,7 @@ define([
     '$state',
     'eventService',
     function ($scope, $state, eventService) {
-      $scope.search = {};
+     /* $scope.search = {};
       $scope.goToList = function () {
         $state.go('results', {
           search: $scope.search.string,
@@ -26,6 +26,7 @@ define([
           $scope.$broadcast('scroll.infiniteScrollComplete');
         });
       };
+	  */
     }
   ]);
 });

@@ -11,7 +11,7 @@ define([
     function ($scope, $state, eventService) {
       $scope.search = {};
       $scope.goToList = function () {
-        $state.go('results', {
+        $state.go('home.results', {
           search: $scope.search.string,
           satTrans: $scope.search.satTrans,
           wheelChair: $scope.search.wheelChair,
